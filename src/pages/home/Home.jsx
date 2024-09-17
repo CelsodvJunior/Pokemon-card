@@ -1,21 +1,24 @@
 import React from 'react'
 import PokemonCard from '../../components/cards/PokemonCard/index'
 import TopoBar from '../../components/topoBar';
-
-import { HomeContianer } from './Home-styles';
 import SearchBar from '../../components/searchBar';
+
+import { HomeContianer, WrapCard } from './Home-styles';
+
 
 const Home = () => {
   return (
     <HomeContianer>
       <TopoBar />
       <SearchBar />
-      <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
-      <PokemonCard />
+      <WrapCard>
+        <PokemonCard />
+        <PokemonCard />
+        <PokemonCard />
+        <PokemonCard />
+        <PokemonCard />
+        <PokemonCard />
+      </WrapCard>
     </HomeContianer>
   );
 };
