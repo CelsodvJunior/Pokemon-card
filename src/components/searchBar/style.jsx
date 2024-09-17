@@ -4,7 +4,7 @@ import BachgroundSearch from "../../assets/fundo-busca.png"
 
 export const SearchBackgoundImg = styled.section`
   background: url(${BachgroundSearch});
-  height: 260px;
+  height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@ export const SearchBackgoundImg = styled.section`
 
 export const SearchInputContainer = styled.div`
   position: relative;
-  width: 80%;
+  width: 70%;
 `;
 
 export const SearchInput = styled.input`

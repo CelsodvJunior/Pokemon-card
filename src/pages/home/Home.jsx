@@ -1,17 +1,22 @@
 import React from 'react'
-import PokemonCard from '../../components/cards/PokemonCard'
-import styled from 'styled-components'
+import PokemonCard from '../../components/cards/PokemonCard/index'
+import TopoBar from '../../components/topoBar';
 
-const HomeContainer = styled.section`
-  align-iten: center;
-  text-align: center;
-`;
+import { HomeContianer } from './Home-styles';
+import SearchBar from '../../components/searchBar';
 
 const Home = () => {
   return (
-    <HomeContainer>
+    <HomeContianer>
+      <TopoBar />
+      <SearchBar />
       <PokemonCard />
-    </HomeContainer>
+      <PokemonCard />
+      <PokemonCard />
+      <PokemonCard />
+      <PokemonCard />
+      <PokemonCard />
+    </HomeContianer>
   );
 };
 
