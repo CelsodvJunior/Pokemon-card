@@ -27,6 +27,7 @@ export const SearchInput = styled.input`
   border: none;
   border-radius: 6px;
   outline: none;
+  cursor:pointer;
 `;
 
 export const SearchIcon = styled.img`

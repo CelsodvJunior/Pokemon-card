@@ -7,8 +7,13 @@ export const CardContainer = styled.section`
   background: #fff;
   width: 200px;
   heigth: 400px;
-  border: 1px solid #000;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
+}
 `;
 
 export const CardWrapper = styled.article`
@@ -31,27 +36,20 @@ export const CardTextName = styled.h3`
 export const CardAction = styled.section`
   max-width: 100%;
   display: flex;
-  justfy-content: space-around;
+  justify-content: space-around;
   margin-top: 10px;
 `;
 
 export const CardButton = styled.button`
-  heigth:19px;
+  width: 50%;
+  heigth: 19px;
   border: none;
   padding: 8px 16px;
-  border-radius: 4px;
   cursor: pointer;
   font-size: 13px;
+  background: #F9F0FC;
 
   &:hover {
-    background-color: #45a049;
-  }
-
-  &.catch-button {
-    background-color: #f44336;
-
-    &:hover {
-      background-color: #e53935;
-    }
+    color: #f44336;
   }
 `;
