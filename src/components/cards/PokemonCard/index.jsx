@@ -7,12 +7,12 @@ import {
   CardAction,
   CardButton
 
-} from "./PokemonCard-style";
+} from "./style";
 
 
-import TestePokmon from "../../assets/teste-pokemon.png"
-import TrashIcon from "../../assets/Icon-trash.svg"
-import EditIcon from "../../assets/Icon-edit.svg"
+import TestePokmon from "../../../assets/teste-pokemon.png"
+import TrashIcon from "../../../assets/Icon-trash.svg"
+import EditIcon from "../../../assets/Icon-edit.svg"
 
 
 
