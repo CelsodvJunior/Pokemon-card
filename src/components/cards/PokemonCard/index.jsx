@@ -10,7 +10,6 @@ import {
 } from "./style";
 
 
-import TestePokmon from "../../../assets/teste-pokemon.png"
 import TrashIcon from "../../../assets/Icon-trash.svg"
 import EditIcon from "../../../assets/Icon-edit.svg"
 
@@ -18,16 +17,15 @@ import EditIcon from "../../../assets/Icon-edit.svg"
 
 
 
-const PokemonCard = () => {
-  const name = "Snoopy "
+const PokemonCard = ({ pokemon }) => {
   return (
     <>
       <CardContainer>
         <CardWrapper>
-          <CardImg src={TestePokmon} />
+          <CardImg src={pokemon.image} alt={pokemon.name} />
           <CardBody>
             <CardTextName>
-              {name}
+              {pokemon.name}
             </CardTextName>
             <CardAction>
               <CardButton><img src={TrashIcon} alt="trashicon" />Delete</CardButton>

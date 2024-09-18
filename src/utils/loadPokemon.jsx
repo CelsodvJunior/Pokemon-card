@@ -1,12 +1,26 @@
+import axios from "axios";
 const loadPokemon = async () => {
-  const response = await axios.get("https://pokeapi.co/api/v2/pokemon/ditto")
-  const pokemonData = response.data
+  try {
+    const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=1000');
+    const pokemonList = response.data.results;
 
-  console.log(pokemonData)
+    const pokemonData = await Promise.all(
+      pokemonList.map(async (pokemon) => {
+        const pokemonResponse = await axios.get(pokemon.url);
+        const pokemonDetails = pokemonResponse.data;
+        return {
+          name: pokemonDetails.name,
+          image: pokemonDetails.sprites.front_default,
+        };
+      })
+    );
 
+    return pokemonData;
+  } catch (error) {
+    console.error('Error on get pokemons datas', error);
+    throw error;
+  }
 };
-
-loadPokemon()
 
 export default loadPokemon
 
