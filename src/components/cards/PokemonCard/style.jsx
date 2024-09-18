@@ -7,7 +7,7 @@ export const CardContainer = styled.section`
   background: #fff;
   width: 200px;
   heigth: 400px;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease;
 

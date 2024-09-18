@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const HomeContianer = styled.section`
-  bacground: #f0f0f0;
+  width: 100%;
+
+   background: #fafaf0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   aline-itens: center;
+
 `
 
 export const WrapCard = styled.section`

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ResultAndNewCardContainer = styled.section`
-  width: 70%;
+  width: 100%;
   margin: 31px;
   height: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 `
 
 export const HandleResult = styled.h2`

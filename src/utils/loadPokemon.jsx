@@ -1,7 +1,7 @@
 import axios from "axios";
 const loadPokemon = async () => {
   try {
-    const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=1000');
+    const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=10');
     const pokemonList = response.data.results;
 
     const pokemonData = await Promise.all(
