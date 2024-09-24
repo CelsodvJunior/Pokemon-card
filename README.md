@@ -12,16 +12,26 @@ This project is a simple web page that displays Pokémon cards with some informa
 ## Installation
 
 1. Clone the repository:
-```bash
-  git clone https://github.com/CelsodvJunior/Pokemon-card
-```
+  ```bash
+    git clone https://github.com/CelsodvJunior/Pokemon-card
+  ```
 
 2. Navigate to the project folder:
-```bash
-  cd Pokemon-card
-```
+  ```bash
+    cd Pokemon-card
+  ```
 
 3. Install the dependenci3es:
-```bash
-  npm install
-```
+  ```bash
+    npm install
+  ```
+
+To run the development server, exectue the following command:
+  ```bash
+    npm run dev
+  ```
+
+This will start the local development server. Open your browser and navigate to the URL displayed
+in the terminal to view the application.
+
+
