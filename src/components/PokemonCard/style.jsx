@@ -6,14 +6,15 @@ import styled from "styled-components";
 export const CardContainer = styled.section`
   background: #fff;
   width: 200px;
-  heigth: 400px;
+  height: 400px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease;
 
   &:hover {
      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
-}
+  }
+  
 `;
 
 export const CardWrapper = styled.article`
@@ -22,7 +23,7 @@ export const CardWrapper = styled.article`
 
 export const CardImg = styled.img`
   max-width: 100%;
-  heigth: auto;
+  height: auto;
   transform-origin: center;
 `;
 
