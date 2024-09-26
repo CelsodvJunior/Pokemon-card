@@ -5,7 +5,7 @@ This project is a simple web page that displays Pokémon cards with some informa
 ## Technologies Used
 
 - [React.js](https://reactjs.org/) – A JavaScript library for building user interfaces.
-- [Vite](https://vitejs.dev/) – A build tool that provides fast development and optimized production builds.
+- [Vite](https://vitejs.dev/) – A building tool that provides fast development and optimized production builds.
 - [Axios](https://axios-http.com/) – A promise-based HTTP client for making requests.
 - [Styled-Components](https://styled-components.com/) – A library for styling React components using tagged template literals.
 
@@ -21,12 +21,12 @@ This project is a simple web page that displays Pokémon cards with some informa
     cd Pokemon-card
   ```
 
-3. Install the dependenci3es:
+3. Install the dependencies:
   ```bash
     npm install
   ```
 
-To run the development server, exectue the following command:
+To run the development server, run the following command:
   ```bash
     npm run dev
   ```
