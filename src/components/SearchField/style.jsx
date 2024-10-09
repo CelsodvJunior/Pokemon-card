@@ -29,20 +29,47 @@ export const Container = styled.section`
 
 export const InputContainer = styled.div`
   width: 70%;
-  height: 20%;
-  border-radius: 10px;
-  border: none;
+  height: 35%;
+
+  @media (min-width: 1023px) {
+    height: 25%;
+  }
+  @media (min-width: 1339px) {
+    height: 15%;
+  }
 `;
+
 export const Input = styled.input`
   width: 100%;
   height: 100%;
   position: relative;
   padding-left: 4%;
-  font-size: 0.5rem;
-  color: #757575;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+
+  ::placeholder {
+    font-size: 0.3rem;
+    color: #757575;
+  }
 
   &:focus::placeholder {
     opacity: 0;
+  }
+
+  @media (min-width: 767px) {
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+
+  @media (min-width: 1023px) {
+    font-size: 1.5rem;
+    border-radius: 8px;
+  }
+
+  @media (min-width: 1333px) {
+    font-size: 2.5rem;
+    border-radius: 10px;
   }
 `;
 
