@@ -4,6 +4,7 @@ export const Container = styled.div`
   background: ${({ theme }) => theme.color.gradient};
   width: 100%;
   height: 50%;
+  border: 1px, #00000029;
 `;
 
 export const LogImg = styled.img`
