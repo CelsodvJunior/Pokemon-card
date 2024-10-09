@@ -1,8 +1,13 @@
+import { ThemeProvider } from "styled-components";
+import BarraLogo from "./components/BarraLogo";
+
+import theme from "./utils/theme";
+
 const App = () => {
   return (
-    <>
-      <h1>Starting project Pokemon Card</h1>
-    </>
+    <ThemeProvider theme={theme}>
+      <BarraLogo />
+    </ThemeProvider>
   );
 };
 
