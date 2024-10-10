@@ -7,16 +7,17 @@ import {
   WrapperText,
 } from "./style";
 
-import ImgTeste from "../../assets/pokemonTeste.png";
 import Trash from "../../assets/Icon-trash.svg";
 import Edit from "../../assets/Icon-edit.svg";
 
-const CardPokemon = () => {
+import PropTypes from "prop-types";
+
+const CardPokemon = ({ pokemon }) => {
   return (
     <Container>
-      <Img src={ImgTeste} alt="Pokemon Img" />
+      <Img src={pokemon.image} alt={pokemon.name} />
       <WrapperText>
-        <TextCard>Name of pokemon</TextCard>
+        <TextCard>{pokemon.name}</TextCard>
       </WrapperText>
       <WarraperButton>
         <Button>
@@ -31,6 +32,13 @@ const CardPokemon = () => {
       </WarraperButton>
     </Container>
   );
+};
+
+CardPokemon.propTypes = {
+  pokemon: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default CardPokemon;
