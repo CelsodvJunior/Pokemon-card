@@ -3,8 +3,12 @@ import { Container, Icon, Input, InputContainer } from "./style";
 // import Lupa from "../../assets/lupa.svg";
 
 //  TODO refactore the icon search
-const SearchField = () => {
+const SearchField = ({ PokemonFilter }) => {
   const inputRef = useRef(null);
+
+  const handleInputChange = (event) => {
+    PokemonFilter(event.target.value);
+  };
 
   return (
     <Container>
@@ -16,6 +20,7 @@ const SearchField = () => {
           onMouseEnter={() => {
             inputRef.current.focus();
           }}
+          onChange={handleInputChange}
         />
       </InputContainer>
     </Container>
