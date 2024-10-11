@@ -13,6 +13,10 @@ import Edit from "../../assets/Icon-edit.svg";
 import PropTypes from "prop-types";
 
 const CardPokemon = ({ pokemon }) => {
+  const handleClick = () => {
+    alert("WE CAN`T DO THIS");
+  };
+
   return (
     <Container>
       <Img src={pokemon.image} alt={pokemon.name} />
@@ -20,11 +24,11 @@ const CardPokemon = ({ pokemon }) => {
         <TextCard>{pokemon.name}</TextCard>
       </WrapperText>
       <WarraperButton>
-        <Button>
+        <Button onClick={handleClick}>
           <img src={Trash} alt="Icon trash" />
           Edit
         </Button>
-        <Button>
+        <Button onClick={handleClick}>
           {" "}
           <img src={Edit} alt="Icon Edit" />
           Trash
