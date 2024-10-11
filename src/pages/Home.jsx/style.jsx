@@ -2,9 +2,12 @@ import styled from "styled-components";
 import breakpoints from "../../utils/braekpoints";
 
 export const Container = styled.section`
-  max-width: 2000px;
+  max-width: 1500px;
   margin: 0 auto;
   background: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const WrapperNewCard = styled.div`
@@ -16,6 +19,16 @@ export const WrapperNewCard = styled.div`
   align-items: center;
   justify-content: space-around;
 
+
+  @media (min-width: ${breakpoints.tablet}) {
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  @media (min-width: ${breakpoints.laptop}) {
+    width: 70%;
+    justify-content: space-between;
+  }
 `;
 
 export const P = styled.p`
@@ -41,10 +54,11 @@ export const WrapperCard = styled.div`
   justify-items: center;
 
   @media (min-width: ${breakpoints.tablet}) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   @media (min-width: ${breakpoints.laptop}) {
-    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    grid-template-columns: repeat(4,1fr);
   }
   @media (min-width: ${breakpoints.desktop}) {
     grid-template-columns: repeat(4, 1fr);

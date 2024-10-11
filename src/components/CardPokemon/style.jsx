@@ -4,6 +4,9 @@ export const Container = styled.section`
   width: 200px;
   height: 300px;
   border-radius: 8px;
+background: #fff;
+box-shadow: 0px 3px 6px #E5E5E5;
+border: 1px solid #E4E4E4;
 
   display: flex;
   flex-direction: column;
@@ -33,6 +36,7 @@ export const WarraperButton = styled.div`
 
 export const Button = styled.button`
   width: 100%;
+  border: none;
   display: flex;
   justify-content: center;
   gap: 5%;
