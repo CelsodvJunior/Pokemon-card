@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../utils/braekpoints";
 
 export const Container = styled.div`
   background: ${({ theme }) => theme.color.gradient};
@@ -8,11 +9,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
-  @media (min-width: 767px) {
+  @media (min-width: ${breakpoints.tablet}) {
     height: 10vh;
   }
 
-  @media (min-width: 1023px) {
+  @media (min-width: ${breakpoints.laptop}) {
     height: 8vh;
   }
 `;
@@ -23,10 +24,10 @@ export const LogImg = styled.img`
   margin-left: 3%;
   padding: 5px;
 
-  @media (min-width: 1339px) {
-    height: 5vh;
+  @media (min-width: ${breakpoints.desktop}) {
+    height: 10vh;
   }
-  @media (min-width: 1023px) {
-    height: 5vh;
+  @media (min-width: ${breakpoints.laptop}) {
+    height: 7vh;
   }
 `;

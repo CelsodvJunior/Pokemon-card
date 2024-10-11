@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ImgBgsearch from "../../assets/fundo-busca.png";
 import Lupa from "../../assets/lupa.svg";
+import breakpoints from "../../utils/braekpoints";
 
 export const Container = styled.section`
   background-image: url(${ImgBgsearch});
@@ -31,11 +32,11 @@ export const InputContainer = styled.div`
   width: 70%;
   height: 35%;
 
-  @media (min-width: 1023px) {
+  @media (min-width: ${breakpoints.laptop}) {
     height: 25%;
   }
-  @media (min-width: 1339px) {
-    height: 15%;
+  @media (min-width: ${breakpoints.desktop}) {
+    height: 25%;
   }
 `;
 
@@ -57,18 +58,18 @@ export const Input = styled.input`
     opacity: 0;
   }
 
-  @media (min-width: 767px) {
-    font-size: 1rem;
+  @media (min-width: ${breakpoints.tablet}) {
+    font-size: 0.85rem;
     border-radius: 6px;
   }
 
-  @media (min-width: 1023px) {
-    font-size: 1.5rem;
+  @media (min-width: ${breakpoints.laptop}) {
+    font-size: 1rem;
     border-radius: 8px;
   }
 
-  @media (min-width: 1333px) {
-    font-size: 2.5rem;
+  @media (min-width: ${breakpoints.desktop}) {
+    font-size: 1.5rem;
     border-radius: 10px;
   }
 `;
