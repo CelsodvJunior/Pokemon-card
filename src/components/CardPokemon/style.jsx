@@ -36,8 +36,10 @@ export const WarraperButton = styled.div`
 
 export const Button = styled.button`
   width: 100%;
+  height: 30px;
   border: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5%;
 `;
