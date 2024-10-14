@@ -42,4 +42,5 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   gap: 5%;
+  cursor: pointer;
 `;
