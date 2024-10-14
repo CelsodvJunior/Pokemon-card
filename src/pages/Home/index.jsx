@@ -5,6 +5,7 @@ import CardPokemon from "../../components/CardPokemon";
 import SearchField from "../../components/SearchField";
 import loadPokemon from "../../utils/loadPokemon";
 import { Container, P, WrapperCard, WrapperNewCard } from "./style";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -40,7 +41,9 @@ const Home = () => {
       <SearchField PokemonFilter={PokemonFilter} />
       <WrapperNewCard>
         <P>Search result...</P>
-        <Button>New Card</Button>
+        <Link to="/newcard">
+          <Button>New Card</Button>
+        </Link>
       </WrapperNewCard>
       <WrapperCard>
         {pokemons.map((pokemon) => {
