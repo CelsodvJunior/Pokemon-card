@@ -10,6 +10,7 @@ export const StyleButton = styled.button`
   color: #ffffff;
   font-famyl: ${({ theme }) => theme.fonts};
   font-size: 0.75rem;
+  cursor: pointer;
 
   @media (min-width: 767px) {
     width: 150px;
